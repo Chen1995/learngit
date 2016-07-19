@@ -29,3 +29,9 @@ git 常用操作：
 
 	从远程库克隆到本地库
 		git clone git@github.com:Chen1995/gitkill.git
+	
+	创建分支，然后切换到dev分支（git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：git branch dev     git checkout dev）
+		git checkout -b dev
+
+	查看当前分支（git branch命令会列出所有分支，当前分支前面会标一个*号）
+		git branch
