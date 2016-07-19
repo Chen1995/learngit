@@ -12,7 +12,7 @@ git 常用操作：
 	修改文件，将文件提交到版本库：
 		git add 文件名
 		git commit -m "日志"
-	查看历史更改记录(只可以看到最近三次如果输出内容太多可以加上“--pretty=oneline”，类似3628164...882e1e0一大串数字表示版本号)：
+	查看历史更改记录(如果输出内容太多可以加上“--pretty=oneline”，类似3628164...882e1e0一大串数字表示版本号)：
 		git log
 	回退到上一个版本（上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100）：
 		git reset --hard HEAD^   或者git reset --hard 版本号（版本号的一部分）
@@ -25,3 +25,7 @@ git 常用操作：
 	把本地库的所有内容推送到远程库上：
 	    git push -u origin master
 	    git push origin master
+
+
+	从远程库克隆到本地库
+		git clone git@github.com:Chen1995/gitkill.git
