@@ -19,6 +19,7 @@ git 常用操作：
 	查看当前版本内容：
 		cat 文件名
 
+远程仓库：
 	连接远程仓库：
 	    git remote add origin git@github.com:Chen1995/learngit.git（文件名）
 
@@ -26,12 +27,24 @@ git 常用操作：
 	    git push -u origin master
 	    git push origin master
 
-
 	从远程库克隆到本地库
 		git clone git@github.com:Chen1995/gitkill.git
-	
-	创建分支，然后切换到dev分支（git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：git branch dev（创建）     git checkout dev（切换分支））
+分支：
+	创建分支dev，然后切换到dev分支（git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：git branch dev（创建）     git checkout dev（切换分支））
 		git checkout -b dev
 
 	查看当前分支（git branch命令会列出所有分支，当前分支前面会标一个*号）
 		git branch
+
+	合并分支dev(合并指定分支到当前分支)
+		git merge dev 或者 git merge --no-ff -m "merge with no-ff" dev（--no-ff参数，表示禁用Fast forward，合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并，因为本次合并要创建一个新的commit，所以加上-m参数，把commit描述写进去）
+
+	删除分支dev
+		git branch -d dev（-D大写表示强行删除分支）
+
+	git status也可以告诉我们冲突的文件
+
+	远程创建分支dev分支到本地
+	git checkout -b dev origin/dev
+	  （dev分支测试）
+
