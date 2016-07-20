@@ -22,7 +22,10 @@ git 常用操作：
 远程仓库：
 	连接远程仓库：
 	    git remote add origin git@github.com:Chen1995/learngit.git（文件名）
-
+	    
+	把本地库推送到远程库之前先拉取最新的
+	    git pull --rebase origin master
+	    
 	把本地库的所有内容推送到远程库上：
 	    git push -u origin master
 	    git push origin master
