@@ -36,7 +36,7 @@ git 常用操作：
 	查看当前分支（git branch命令会列出所有分支，当前分支前面会标一个*号）
 		git branch
 
-	合并分支去dev(合并指定分支到当前分支)
+	合并分支到dev(合并指定分支到当前分支)
 		git merge dev 或者 git merge --no-ff -m "merge with no-ff" dev（--no-ff参数，表示禁用Fast forward，合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并，因为本次合并要创建一个新的commit，所以加上-m参数，把commit描述写进去）
 
 	删除分支dev
@@ -46,3 +46,5 @@ git 常用操作：
 
 	远程创建分支dev分支到本地
 	git checkout -b dev origin/dev
+
+
