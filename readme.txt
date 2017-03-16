@@ -50,4 +50,5 @@ git 常用操作：
 	远程创建分支dev分支到本地
 	git checkout -b dev origin/dev
 
-
+	git如何建立个人主页：参考自 http://blog.csdn.net/qiangzaizaio/article/details/52927410
+				http://blog.csdn.net/qiangzaizaio/article/details/52927410
